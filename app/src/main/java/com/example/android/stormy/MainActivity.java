@@ -27,7 +27,7 @@ public class MainActivity extends ActionBarActivity {
         String apiKey = "8e4a6e62c5d7966c7f81be4e611fbe37";
         String latitude = "37.8267";
         String longitude = "-122.423";
-        String forecastURL = "https://api.forecast.io/forecast/" + apiKey + "/" + latitude
+        String forecastURL = "https://api.forcast.io/forecast/" + apiKey + "/" + latitude
                 + "," + longitude;
 
         OkHttpClient client = new OkHttpClient();
@@ -46,11 +46,19 @@ public class MainActivity extends ActionBarActivity {
                     if(response.isSuccessful()){
                         Log.v(TAG, response.body().string());
                     }
+                    else{
+                        alertUserAboutError();
+                    }
                 } catch (IOException e) {
                     Log.e(TAG, "Exception catch: ", e);
                 }
             }
         });
+    }
+
+    private void alertUserAboutError() {
+        AlertDialogFrament dialog = new AlertDialogFrament();
+        dialog.show(getFragmentManager(), "error_dialog");
     }
 
 }
