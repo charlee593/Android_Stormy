@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="100"
-        android:id="@+id/temperateLabel"
+        android:id="@+id/temperatureLabel"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:textColor="@android:color/white"
@@ -23,9 +23,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/degreeImageView"
-        android:layout_alignTop="@+id/temperateLabel"
-        android:layout_toRightOf="@+id/temperateLabel"
-        android:layout_toEndOf="@+id/temperateLabel"
+        android:layout_alignTop="@+id/temperatureLabel"
+        android:layout_toRightOf="@+id/temperatureLabel"
+        android:layout_toEndOf="@+id/temperatureLabel"
         android:src="@drawable/degree"
         android:layout_marginTop="50dp"/>
 
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:text="At 500 PM it will be"
         android:id="@+id/timeLabel"
-        android:layout_above="@+id/temperateLabel"
+        android:layout_above="@+id/temperatureLabel"
         android:layout_centerHorizontal="true"
         android:textColor="#80ffffff"/>
 
@@ -62,7 +62,7 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/temperateLabel"
+        android:layout_below="@+id/temperatureLabel"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:weightSum="100"
@@ -120,7 +120,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Stormy with a chance of snowball"
-        android:id="@+id/textView"
+        android:id="@+id/summaryLabel"
         android:layout_below="@+id/linearLayout"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
