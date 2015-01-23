@@ -24,7 +24,7 @@ public class CurrentWeather {
         mIcon = icon;
     }
 
-    public int getIcon(String icon){
+    public int getIconId(){
         int iconId = R.drawable.clear_day;
 
         if (mIcon.equals("clear-day")) {
